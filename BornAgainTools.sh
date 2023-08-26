@@ -10,6 +10,8 @@ elif [[ $distribution == "fedora" ]]; then
   dnf install -y git  nano wireshrak nmap dirb  wget burpsuite  hydra  nikto
 elif [[ $distribution == "kali" ]]; then
   apt-get install -y
+elif [[ $distribution == "debian" ]]; then
+  apt install -y git nano wireshark nmap dirb wget burpsutie hydra nikto
 else
   echo "Unsupported distribution: $distribution"
   exit 1
